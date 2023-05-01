@@ -99,15 +99,15 @@ The 'source-map' devtool creates the 'dist/main.js.map' file. If I change to 'pr
 
 In the terminal type `npm install eslint --save-dev`.<br>
 Then type `./node_modules/.bin/eslint --init` which will be followed by prompts. Choose the following:
--To check syntax, find problems, and enforce code style
--CommonJS
--None of these
--No
--Browser
--Airbnb
--JSON
--Yes
--npm
+- To check syntax, find problems, and enforce code style
+- CommonJS
+- None of these
+- No
+- Browser
+- Airbnb
+- JSON
+- Yes
+- npm
 
 
 Need to write the shit about pushing a subfolder so you can see your project live on Github.<br>
