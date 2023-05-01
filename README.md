@@ -12,6 +12,8 @@ TL;DR
 
 Instructions:
 
+## Webpack
+
 Create a new repository in Github.<br>
 Copy the new repo's SSH key.<br>
 Open terminal, change directory to where you keep your project files.<br>
@@ -91,7 +93,11 @@ module.exports = {
   ```
   
 To run everything, in the terminal type `npx webpack`.<br>
-The 'source-map' devtool creates the 'dist/main.js.map' file. If I change to 'production' when project is finished should I delete this file?
+The 'source-map' devtool creates the 'dist/main.js.map' file. If I change to 'production' when project is finished should I delete this file?<br>
+
+## Linting and Prettier
+
+
 
 
 
