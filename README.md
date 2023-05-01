@@ -76,6 +76,7 @@ module.exports = {
 Head inside your 'src/index.js' file and type `import './style.css';` at the top of the page then save.<br>
 In the terminal type `mkdir src/fonts src/images`<br>
 <br>
+https://webpack.js.org/guides/development/<br>
 https://webpack.js.org/configuration/devtool/<br>
 <br>
 Go inside your 'webpack.config.js' file and update two parts of the code to have `mode: "development",` and `devtool: "eval",` like this and save:
