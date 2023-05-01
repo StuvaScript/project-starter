@@ -167,7 +167,7 @@ Go inside the '.eslintrc.json' file and add 'prettier' to the 'extends' array. M
   // other code
 ```
 
-
+sdfsdf
 Need to write the shit about pushing a subfolder so you can see your project live on Github.<br>
 Type `npx webpack --watch` in the terminal for automatic changes on save.<br>
 Remember when you're done with your project to go inside the 'webpack.config.js' file and change the mode to 'production' and change the devtool to a more production friendly source map.
