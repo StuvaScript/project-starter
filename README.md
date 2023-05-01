@@ -25,7 +25,6 @@ Inside the 'index.html' file, go ahead and create your boilerplate and type `<sc
 Create the webpack config file back in the terminal below by typing `touch webpack.config.js`.<br>
 Inside the webpack config file, copy pasta this whole code:
 ```
-
 const path = require('path');
 
 module.exports = {
