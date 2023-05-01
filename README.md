@@ -8,7 +8,7 @@ TL;DR
 
 Instructions:
 
-Create a new repository in Github.
+Create a new repository in Github.<br>
 Copy the new repo's SSH key.
 Open terminal, change directory to where you keep your project files.
 Git clone and paste the key. 
