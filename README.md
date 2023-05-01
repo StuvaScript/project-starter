@@ -113,6 +113,7 @@ Then type `./node_modules/.bin/eslint --init` which will be followed by prompts.
 If you haven't already, go into 'Extensions' in VS Code and download the 'ES Lint' extension.<br>
 To format on save, go the VS Code settings and click 'Command Palette', then click 'Preferences: Open Workspace Settings (JSON)'.<br>
 Paste the following code inside and save:
+
 ```
 {
     "editor.codeActionsOnSave": {
@@ -122,6 +123,7 @@ Paste the following code inside and save:
 }
 ```
 Go inside the file '.eslintrc.json' and add the following code to 'rules':
+
 ```
 "rules" : {
     "no-console": "off"
