@@ -122,13 +122,26 @@ Paste the following code inside and save:
     "eslint.validate": ["javascript"]
 }
 ```
-Go inside the file '.eslintrc.json' and add the following code to 'rules':
+
+Go inside the file '.eslintrc.json' and add the following code to 'rules' then save:
 
 ```
 "rules" : {
     "no-console": "off"
 }
 ```
+
+To install Prettier, in the terminal type `npm install --save-dev --save-exact prettier`.<br>
+Then type `echo {}> .prettierrc.json`.<br>
+Inside the newly created '.prettierrc.json' file paste the following and save:
+
+```
+{
+    "singleQuote": true
+}
+```
+
+
 
 Need to write the shit about pushing a subfolder so you can see your project live on Github.<br>
 Type `npx webpack --watch` in the terminal for automatic changes on save.<br>
