@@ -198,8 +198,10 @@ Go inside the 'package.json' file and add the 'lint-staged' code (I just added i
 
 Type `npx webpack --watch` in the terminal for automatic changes on save. To get out of 'watch mode' type 'Ctrl + C'<br>
 Go ahead and `git add .` then `git commit .` then `git push origin main`<br>
-In order for Github to display your pages, you need to let Github know about your subtree. Type in the following: `git add dist && git commit -m "Initial dist subtree commit"`<br>
-Then use the subtree push by typing the following: `git subtree push --prefix dist origin gh-pages`<br>
+In order for Github to display your pages, you need to let Github know about your subtree. Type in the following:
+`git add dist && git commit -m "Initial dist subtree commit"`
+Then use the subtree push by typing the following:
+`git subtree push --prefix dist origin gh-pages`
 Every time you do a normal 'add commit push' you will need to do the subtree push as well to stay up to date.<br>
 Remember when you're done with your project to go inside the 'webpack.config.js' file and change the mode to 'production' and change the devtool to a more production friendly source map.
 
