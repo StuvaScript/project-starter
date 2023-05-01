@@ -84,7 +84,7 @@ const path = require("path");
 module.exports = {
   mode: "development", // <-- Add this line
   entry: "./src/index.js",
-  devtool: "eval", // <-- Also add this line
+  devtool: "source-map", // <-- Also add this line
   output: {
   
  // more code ...
