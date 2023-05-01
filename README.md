@@ -1,11 +1,11 @@
-This is a file on how to start your projects using Webpack, linting, prettier, and hooks. All info can be found here:
-https://www.theodinproject.com/lessons/node-path-javascript-webpack
-https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page
-https://webpack.js.org/guides/getting-started/
-https://gist.github.com/cobyism/4730490
-https://webpack.js.org/configuration/devtool/
-https://www.theodinproject.com/lessons/node-path-javascript-linting
-https://www.digitalocean.com/community/tutorials/linting-and-formatting-with-eslint-in-vs-code
+This is a file on how to start your projects using Webpack, linting, prettier, and hooks. All info can be found here:<br>
+https://www.theodinproject.com/lessons/node-path-javascript-webpack<br>
+https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page<br>
+https://webpack.js.org/guides/getting-started/<br>
+https://gist.github.com/cobyism/4730490<br>
+https://webpack.js.org/configuration/devtool/<br>
+https://www.theodinproject.com/lessons/node-path-javascript-linting<br>
+https://www.digitalocean.com/community/tutorials/linting-and-formatting-with-eslint-in-vs-code<br>
 
 
 TL;DR
