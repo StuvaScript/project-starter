@@ -6,6 +6,7 @@ https://gist.github.com/cobyism/4730490<br>
 https://webpack.js.org/configuration/devtool/<br>
 https://www.theodinproject.com/lessons/node-path-javascript-linting<br>
 https://www.digitalocean.com/community/tutorials/linting-and-formatting-with-eslint-in-vs-code<br>
+https://github.com/prettier/eslint-config-prettier#installation<br>
 
 
 TL;DR
@@ -149,7 +150,23 @@ node_modules
 main.js
 ```
 
-After creating the 'ignore' files, its safe to reformat all the files by pasting this code in the terminal `npx prettier --write .`.<br>
+After creating the 'ignore' files, its safe to reformat all the files by pasting this code in the terminal `npx prettier --write .`<br>
+To allow ES Lint and Prettier to play nicely together, type this in the terminal: `npm install --save-dev eslint-config-prettier`<br>
+Go inside the '.eslintrc.json' file and add 'prettier' to the 'extends' array. Make sure it goes last so it overrides the other configs. Code will look like this:
+
+```
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es2021": true
+  },
+  "extends": ["airbnb-base", "prettier"], <-- Add 'prettier' here
+  "overrides": [],
+  
+  // other code
+```
+
 
 Need to write the shit about pushing a subfolder so you can see your project live on Github.<br>
 Type `npx webpack --watch` in the terminal for automatic changes on save.<br>
