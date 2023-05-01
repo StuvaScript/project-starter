@@ -23,7 +23,8 @@ Create 'src' and 'dist' folders by typing `mkdir src dist`.<br>
 Create two necessary files in those folders by typing `touch src/index.js dist/index.html`.<br>
 Inside the 'index.html' file, go ahead and create your boilerplate and type `<script src="main.js" defer></script>` in the head then save.<br>
 Create the webpack config file back in the terminal below by typing `touch webpack.config.js`.<br>
-Inside the webpack config file, copy pasta this whole code:
+Inside the webpack config file, copy pasta this whole code then save:
+
 ```
 const path = require('path');
 
@@ -35,3 +36,5 @@ module.exports = {
   },
 };
 ```
+
+fsdfsd
