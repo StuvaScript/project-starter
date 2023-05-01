@@ -1,12 +1,3 @@
-```
-
-touch fat.css
-mkdir buttz
-```
-
-
-
-
 # Project Starter
 
 This is a file on how to start your projects using Webpack, linting, prettier, and hooks.<br>
