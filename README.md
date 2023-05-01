@@ -1,19 +1,15 @@
-This is a file on how to start your projects using Webpack, linting, prettier, and hooks. All info can be found here:<br>
-https://www.theodinproject.com/lessons/node-path-javascript-webpack<br>
-https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page<br>
-https://webpack.js.org/guides/getting-started/<br>
-https://gist.github.com/cobyism/4730490<br>
-https://webpack.js.org/configuration/devtool/<br>
-https://www.theodinproject.com/lessons/node-path-javascript-linting<br>
-https://www.digitalocean.com/community/tutorials/linting-and-formatting-with-eslint-in-vs-code<br>
-https://github.com/prettier/eslint-config-prettier#installation<br>
-
+This is a file on how to start your projects using Webpack, linting, prettier, and hooks.<br>
 
 TL;DR
 
 Instructions:
 
 ## Webpack
+
+https://www.theodinproject.com/lessons/node-path-javascript-webpack<br>
+https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page<br>
+https://webpack.js.org/guides/getting-started/<br>
+<br>
 
 Create a new repository in Github.<br>
 Copy the new repo's SSH key.<br>
@@ -79,6 +75,9 @@ module.exports = {
  Head into my Github repositories online, find my 'normalize.css' repo, hit the 'copy raw contents' button in the upper right, paste them inside the 'normalize.css' file you just made, then save. (I'll have to find a better way to do this in the future)<br>
 Head inside your 'src/index.js' file and type `import './style.css';` at the top of the page then save.<br>
 In the terminal type `mkdir src/fonts src/images`<br>
+<br>
+https://webpack.js.org/configuration/devtool/<br>
+<br>
 Go inside your 'webpack.config.js' file and update two parts of the code to have `mode: "development",` and `devtool: "eval",` like this and save:
 
 ```
@@ -97,6 +96,10 @@ To run everything, in the terminal type `npx webpack`.<br>
 The 'source-map' devtool creates the 'dist/main.js.map' file. If I change to 'production' when project is finished should I delete this file?<br>
 
 ## Linting and Prettier
+
+https://www.theodinproject.com/lessons/node-path-javascript-linting<br>
+https://www.digitalocean.com/community/tutorials/linting-and-formatting-with-eslint-in-vs-code<br>
+<br>
 
 In the terminal type `npm install eslint --save-dev`.<br>
 Then type `./node_modules/.bin/eslint --init` which will be followed by prompts. Choose the following:
@@ -132,6 +135,9 @@ Go inside the file '.eslintrc.json' and add the following code to 'rules' then s
 }
 ```
 
+<br>
+https://prettier.io/docs/en/install.html<br>
+<br>
 To install Prettier, in the terminal type `npm install --save-dev --save-exact prettier`.<br>
 Then type `echo {}> .prettierrc.json`.<br>
 Inside the newly created '.prettierrc.json' file paste the following and save:
@@ -151,7 +157,11 @@ main.js
 ```
 
 After creating the 'ignore' files, its safe to reformat all the files by pasting this code in the terminal `npx prettier --write .`<br>
-To allow ES Lint and Prettier to play nicely together, type this in the terminal: `npm install --save-dev eslint-config-prettier`<br>
+<br>
+https://github.com/prettier/eslint-config-prettier#installation<br>
+<br>
+To allow ES Lint and Prettier to play nicely together, type this in the terminal:<br>
+`npm install --save-dev eslint-config-prettier`<br>
 Go inside the '.eslintrc.json' file and add 'prettier' to the 'extends' array. Make sure it goes last so it overrides the other configs. Don't forget to add square brackets, a comma, and save. Code will look like this:
 
 ```
@@ -167,6 +177,9 @@ Go inside the '.eslintrc.json' file and add 'prettier' to the 'extends' array. M
   // other code
 ```
 
+<br>
+https://prettier.io/docs/en/install.html#git-hooks<br>
+<br>
 The following git hooks will allow your code to format on commit. Meaning even if you don't save a file (which at this point should automatically format on save), the files getting uploaded to Github will be formatted.
 Install the required Husky and Lint-Staged stuff by copying and pasting this whole code block into the terminal:
 
@@ -198,6 +211,9 @@ Go inside the 'package.json' file and add the 'lint-staged' code (I just added i
 
 Type `npx webpack --watch` in the terminal for automatic changes on save. To get out of 'watch mode' type 'Ctrl + C'<br>
 Go ahead and `git add .` then `git commit .` then `git push origin main`<br>
+<br>
+https://gist.github.com/cobyism/4730490<br>
+<br>
 In order for Github to display your pages, you need to let Github know about your subtree. Type in the following:<br>
 `git add dist && git commit -m "Initial dist subtree commit"`<br>
 Then use the subtree push by typing the following:<br>
