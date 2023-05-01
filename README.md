@@ -19,3 +19,5 @@ Initialize node package manager by typing `npm init -y`. This will create a pack
 Type `npm install webpack webpack-cli --save-dev` to install webpack to the node_modules directory of your project.<br>
 Create a '.gitignore' file by typing `touch .gitignore`.<br>
 Inside '.gitignore' type `node_modules` and save. That way this huge file doesn't save on Github.<br>
+Create 'src' and 'dist' folders by typing `mkdir src dist`.<br>
+Create two necessary files in those folders by typing `touch src/index.js dist/index.html`.<br>
