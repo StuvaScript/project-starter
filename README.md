@@ -177,7 +177,7 @@ npm pkg set scripts.prepare="husky install"
 npx husky add .husky/pre-commit "npx lint-staged"
 ```
 
-Go inside the 'package.json' file and add the 'lint-staged' code (I just added it before 'devDependencies'):
+Go inside the 'package.json' file and add the 'lint-staged' code (I just added it before 'devDependencies') and save:
 
 ```
 // Add the code thats between the dashes
