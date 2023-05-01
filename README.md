@@ -73,7 +73,19 @@ module.exports = {
  Head into my Github repositories online, find my 'normalize.css' repo, hit the 'copy raw contents' button in the upper right, paste them inside the 'normalize.css' file you just made, then save. (I'll have to find a better way to do this in the future)<br>
 Head inside your 'src/index.js' file and type `import './style.css';` at the top of the page then save.<br>
 In the terminal type `mkdir src/fonts src/images`<br>
+Go inside your 'webpack.config.js' file and update part of the code to have `mode: "development"` like this and save:
 
+```
+const path = require("path");
+
+module.exports = {
+  mode: "development", // <-- Add this
+  entry: "./src/index.js",
+  devtool: "eval",
+  output: {
+ // more code ...
+  ```
+  
 
 
 
