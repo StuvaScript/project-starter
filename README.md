@@ -108,6 +108,7 @@ Then type `./node_modules/.bin/eslint --init` which will be followed by prompts.
 - JSON
 - Yes
 - npm
+
 <br>
 If you haven't already, go into 'Extensions' in VS Code and download the 'ES Lint' extension.<br>
 To format on save, go the VS Code settings and click 'Command Palette', then click 'Preferences: Open Workspace Settings (JSON)'.<br>
@@ -120,7 +121,12 @@ Paste the following code inside and save:
     "eslint.validate": ["javascript"]
 }
 ```
-
+Go inside the file '.eslintrc.json' and add the following code to 'rules':
+```
+"rules" : {
+    "no-console": "off"
+}
+```
 
 Need to write the shit about pushing a subfolder so you can see your project live on Github.<br>
 Type `npx webpack --watch` in the terminal for automatic changes on save.<br>
