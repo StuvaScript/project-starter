@@ -177,6 +177,20 @@ npm pkg set scripts.prepare="husky install"
 npx husky add .husky/pre-commit "npx lint-staged"
 ```
 
+Go inside the 'package.json' file and add the following code (I just added it before 'devDependencies'):
+
+```
+"lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  },
+//----------- Add the code above
+
+"devDependencies": {
+  "css-loader": "^6.7.3",
+  "eslint": "^8.39.0",
+    
+ // more code
+```
 
 
 
