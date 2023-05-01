@@ -141,6 +141,14 @@ Inside the newly created '.prettierrc.json' file paste the following and save:
 }
 ```
 
+In the terminal type `touch .eslintignore .prettierignore`.<br>
+Inside both newly created 'ignore' files, paste the following code and save:
+
+```
+node_modules
+main.js
+```
+
 
 
 Need to write the shit about pushing a subfolder so you can see your project live on Github.<br>
