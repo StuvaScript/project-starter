@@ -105,7 +105,6 @@ The 'source-map' devtool creates the 'dist/main.js.map' file. If I change to 'pr
 
 https://www.theodinproject.com/lessons/node-path-javascript-linting<br>
 https://www.digitalocean.com/community/tutorials/linting-and-formatting-with-eslint-in-vs-code<br>
-<br>
 
 ### ES Lint
 
@@ -145,7 +144,6 @@ Go inside the file '.eslintrc.json' and add the following code to 'rules' then s
 
 ### Prettier
 
-<br>
 https://prettier.io/docs/en/install.html<br>
 <br>
 To install Prettier, in the terminal type `npm install --save-dev --save-exact prettier`.<br>
@@ -170,7 +168,6 @@ After creating the 'ignore' files, its safe to reformat all the files by pasting
 
 ### Getting ES Lint and Prettier to play nice
 
-<br>
 https://github.com/prettier/eslint-config-prettier#installation<br>
 <br>
 To allow ES Lint and Prettier to play nicely together, type this in the terminal:<br>
@@ -192,7 +189,6 @@ Go inside the '.eslintrc.json' file and add 'prettier' to the 'extends' array. M
 
 ### Git Hooks (Husky and Lint-Staged)
 
-<br>
 https://prettier.io/docs/en/install.html#git-hooks<br>
 <br>
 The following git hooks will allow your code to format on commit. Meaning even if you don't save a file (which at this point should automatically format on save), the files getting uploaded to Github will be formatted.
@@ -231,7 +227,6 @@ Go ahead and `git add .` then `git commit .` then `git push origin main`<br>
 
 ### Displaying from a subtree
 
-<br>
 https://gist.github.com/cobyism/4730490<br>
 <br>
 In order for Github to display your pages, you need to let Github know about your subtree. Type in the following:<br>
@@ -240,5 +235,5 @@ Then use the subtree push by typing the following:<br>
 `git subtree push --prefix dist origin gh-pages`<br>
 Every time you do a normal 'add commit push' you will need to do the subtree push as well to stay up to date.<br>
 Remember when you're done with your project to go inside the 'webpack.config.js' file and change the mode to 'production' and change the devtool to a more production friendly source map.
-
+<br>
 You're done!! 😄
