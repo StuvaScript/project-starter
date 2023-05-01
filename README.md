@@ -149,7 +149,7 @@ node_modules
 main.js
 ```
 
-
+After creating the 'ignore' files, its safe to reformat all the files by pasting this code in the terminal `npx prettier --write .`.<br>
 
 Need to write the shit about pushing a subfolder so you can see your project live on Github.<br>
 Type `npx webpack --watch` in the terminal for automatic changes on save.<br>
