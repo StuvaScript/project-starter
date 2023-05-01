@@ -1,8 +1,8 @@
+# Project Starter
+
 This is a file on how to start your projects using Webpack, linting, prettier, and hooks.<br>
 
 TL;DR
-
-Instructions:
 
 ## Webpack
 
@@ -11,6 +11,8 @@ https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page<br>
 https://webpack.js.org/guides/getting-started/<br>
 <br>
 
+### Github
+
 Create a new repository in Github.<br>
 Copy the new repo's SSH key.<br>
 Open terminal, change directory to where you keep your project files.<br>
@@ -18,6 +20,9 @@ Type `git clone` and paste the key. <br>
 Change to the new repo's directory.<br>
 Type `code .` to open the project in VS Code.<br>
 Hit 'ctrl + backtick ( \` )' to open the terminal in VS Code.<br>
+
+### Webpack
+
 Initialize node package manager by typing `npm init -y`. This will create a package.json file in your project.<br>
 Type `npm install webpack webpack-cli --save-dev` to install webpack to the node_modules directory of your project.<br>
 Create a '.gitignore' file by typing `touch .gitignore`.<br>
@@ -71,8 +76,8 @@ module.exports = {
 };change
  ```
  
- In the terminal type `touch src/style.css src/normalize.css`.<br>
- Head into my Github repositories online, find my 'normalize.css' repo, hit the 'copy raw contents' button in the upper right, paste them inside the 'normalize.css' file you just made, then save. (I'll have to find a better way to do this in the future)<br>
+In the terminal type `touch src/style.css src/normalize.css`.<br>
+Head into my Github repositories online, find my 'normalize.css' repo, hit the 'copy raw contents' button in the upper right, paste them inside the 'normalize.css' file you just made, then save. (I'll have to find a better way to do this in the future)<br>
 Head inside your 'src/index.js' file and type `import './style.css';` at the top of the page then save.<br>
 In the terminal type `mkdir src/fonts src/images`<br>
 <br>
@@ -101,6 +106,8 @@ The 'source-map' devtool creates the 'dist/main.js.map' file. If I change to 'pr
 https://www.theodinproject.com/lessons/node-path-javascript-linting<br>
 https://www.digitalocean.com/community/tutorials/linting-and-formatting-with-eslint-in-vs-code<br>
 <br>
+
+### ES Lint
 
 In the terminal type `npm install eslint --save-dev`.<br>
 Then type `./node_modules/.bin/eslint --init` which will be followed by prompts. Choose the following:
@@ -136,6 +143,8 @@ Go inside the file '.eslintrc.json' and add the following code to 'rules' then s
 }
 ```
 
+### Prettier
+
 <br>
 https://prettier.io/docs/en/install.html<br>
 <br>
@@ -158,6 +167,9 @@ main.js
 ```
 
 After creating the 'ignore' files, its safe to reformat all the files by pasting this code in the terminal `npx prettier --write .`<br>
+
+### Getting ES Lint and Prettier to play nice
+
 <br>
 https://github.com/prettier/eslint-config-prettier#installation<br>
 <br>
@@ -177,6 +189,8 @@ Go inside the '.eslintrc.json' file and add 'prettier' to the 'extends' array. M
   
   // other code
 ```
+
+### Git Hooks (Husky and Lint-Staged)
 
 <br>
 https://prettier.io/docs/en/install.html#git-hooks<br>
@@ -210,8 +224,13 @@ Go inside the 'package.json' file and add the 'lint-staged' code (I just added i
  // more code
 ```
 
+### Setting it all into motion
+
 Type `npx webpack --watch` in the terminal for automatic changes on save. To get out of 'watch mode' type 'Ctrl + C'<br>
 Go ahead and `git add .` then `git commit .` then `git push origin main`<br>
+
+### Displaying from a subtree
+
 <br>
 https://gist.github.com/cobyism/4730490<br>
 <br>
