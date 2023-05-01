@@ -68,7 +68,8 @@ Inside your 'webpack.config.js' file, update the code to look like this and save
  };
  ```
  
- ok
+ In the terminal type `touch src/style.css src.normalize.css`.<br>
+ Head into my Github repositories online, find my 'normalize.css' repo, copy the contents, paste them inside the 'normalize.css' file you just made, the save. (Will have to find a better way to do this in the future)<br>
 
 
 
