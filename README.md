@@ -91,6 +91,7 @@ module.exports = {
   ```
   
 To run everything, in the terminal type `npx webpack`.<br>
+The 'source-map' devtool creates the 'dist/main.js.map' file. If I change to 'production' when project is finished should I delete this file?
 
 
 
