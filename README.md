@@ -2,6 +2,7 @@ This is a file on how to start your projects using Webpack, linting, prettier, a
 https://www.theodinproject.com/lessons/node-path-javascript-webpack
 https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page
 https://webpack.js.org/guides/getting-started/
+https://gist.github.com/cobyism/4730490
 
 
 TL;DR
@@ -37,4 +38,10 @@ module.exports = {
 };
 ```
 
-fsdfsd
+For asset management, in your terminal type `npm install --save-dev style-loader css-loader`.<br>
+
+
+
+Need to write the shit about pushing a subfolder so you can see your project live on Github.<br>
+
+Type `npx webpack --watch` in the terminal for automatic changes on save.
