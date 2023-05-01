@@ -21,4 +21,18 @@ Create a '.gitignore' file by typing `touch .gitignore`.<br>
 Inside '.gitignore' type `node_modules` and save. That way this huge file doesn't save on Github.<br>
 Create 'src' and 'dist' folders by typing `mkdir src dist`.<br>
 Create two necessary files in those folders by typing `touch src/index.js dist/index.html`.<br>
-Inside the 'index.html' file, go ahead and create your boilerplate and type `<script src="main.js" defer></script>` in the head.<br>
+Inside the 'index.html' file, go ahead and create your boilerplate and type `<script src="main.js" defer></script>` in the head then save.<br>
+Create the webpack config file back in the terminal below by typing `touch webpack.config.js`.<br>
+Inside the webpack config file, copy pasta this whole code:
+```
+
+const path = require('path');
+
+module.exports = {
+  entry: './src/index.js',
+  output: {
+    filename: 'main.js',
+    path: path.resolve(__dirname, 'dist'),
+  },
+};
+```
