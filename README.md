@@ -17,4 +17,5 @@ Type `code .` to open the project in VS Code.<br>
 Hit 'ctrl + backtick ( \` )' to open the terminal in VS Code.<br>
 Initialize node package manager by typing `npm init -y`. This will create a package.json file in your project.<br>
 Type `npm install webpack webpack-cli --save-dev` to install webpack to the node_modules directory of your project.<br>
-
+Create a '.gitignore' file by typing `touch .gitignore`.<br>
+Inside '.gitignore' type `node_modules` and save. That way this huge file doesn't save on Github.<br>
