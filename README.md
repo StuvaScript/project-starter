@@ -41,36 +41,38 @@ module.exports = {
 For asset management, in your terminal type `npm install --save-dev style-loader css-loader`.<br>
 Inside your 'webpack.config.js' file, update the code to look like this and save:
 
-```const path = require('path');
+```
+const path = require("path");
 
- module.exports = {
-   entry: './src/index.js',
-   output: {
-     filename: 'bundle.js',
-     path: path.resolve(__dirname, 'dist'),
-   },
-   module: {
-     rules: [
-       {
-         test: /\.css$/i,
-         use: ['style-loader', 'css-loader'],
-       },
-       {
-         test: /\.(png|svg|jpg|jpeg|gif)$/i,
-         type: 'asset/resource',
-       },
+module.exports = {
+  entry: "./src/index.js",
+  output: {
+    filename: "main.js",
+    path: path.resolve(__dirname, "dist"),
+  },
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
+      },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
-        type: 'asset/resource',
+        type: "asset/resource",
       },
-     ],
-   },
- };
+    ],
+  },
+};
  ```
  
  In the terminal type `touch src/style.css src/normalize.css`.<br>
- Head into my Github repositories online, find my 'normalize.css' repo, copy the contents, paste them inside the 'normalize.css' file you just made, then save. (I'll have to find a better way to do this in the future)<br>
+ Head into my Github repositories online, find my 'normalize.css' repo, hit the 'copy raw contents' button in the upper right, paste them inside the 'normalize.css' file you just made, then save. (I'll have to find a better way to do this in the future)<br>
 Head inside your 'src/index.js' file and type `import './style.css';` at the top of the page then save.<br>
+In the terminal type `mkdir src/fonts src/images`<br>
 
 
 
