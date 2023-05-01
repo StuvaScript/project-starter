@@ -152,7 +152,7 @@ main.js
 
 After creating the 'ignore' files, its safe to reformat all the files by pasting this code in the terminal `npx prettier --write .`<br>
 To allow ES Lint and Prettier to play nicely together, type this in the terminal: `npm install --save-dev eslint-config-prettier`<br>
-Go inside the '.eslintrc.json' file and add 'prettier' to the 'extends' array. Make sure it goes last so it overrides the other configs. Code will look like this:
+Go inside the '.eslintrc.json' file and add 'prettier' to the 'extends' array. Make sure it goes last so it overrides the other configs. Don't forget to add square brackets, a comma, and save. Code will look like this:
 
 ```
 {
@@ -167,7 +167,19 @@ Go inside the '.eslintrc.json' file and add 'prettier' to the 'extends' array. M
   // other code
 ```
 
-sdfsdf
+The following git hooks will allow your code to format on commit. Meaning even if you don't save a file (which at this point should automatically format on save), the files getting uploaded to Github will be formatted.
+Install the required Husky and Lint-Staged stuff by copying and pasting this whole code block into the terminal:
+
+```
+npm install --save-dev husky lint-staged
+npx husky install
+npm pkg set scripts.prepare="husky install"
+npx husky add .husky/pre-commit "npx lint-staged"
+```
+
+
+
+
 Need to write the shit about pushing a subfolder so you can see your project live on Github.<br>
 Type `npx webpack --watch` in the terminal for automatic changes on save.<br>
 Remember when you're done with your project to go inside the 'webpack.config.js' file and change the mode to 'production' and change the devtool to a more production friendly source map.
