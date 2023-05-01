@@ -203,4 +203,4 @@ Then use the subtree push by typing the following: `git subtree push --prefix di
 Every time you do a normal 'add commit push' you will need to do the subtree push as well to stay up to date.<br>
 Remember when you're done with your project to go inside the 'webpack.config.js' file and change the mode to 'production' and change the devtool to a more production friendly source map.
 
-You're done!! ### 😄
+You're done!! ### 😄 sdf
