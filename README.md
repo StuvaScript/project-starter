@@ -234,6 +234,6 @@ In order for Github to display your pages, you need to let Github know about you
 Then use the subtree push by typing the following:<br>
 `git subtree push --prefix dist origin gh-pages`<br>
 Every time you do a normal 'add commit push' you will need to do the subtree push as well to stay up to date.<br>
-Remember when you're done with your project to go inside the 'webpack.config.js' file and change the mode to 'production' and change the devtool to a more production friendly source map.
+Remember when you're done with your project to go inside the 'webpack.config.js' file and change the mode to 'production' and change the devtool to a more production friendly source map.<br>
 <br>
 You're done!! 😄
