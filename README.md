@@ -168,7 +168,7 @@ Delete everything and paste the following code inside and save:
  // more code
 ```
 
-9. Run this code: git add dist && git commit -m "Initial dist subtree commit"
+9. Run this code:
 
 ```
 npx prettier --write .
