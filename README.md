@@ -129,15 +129,7 @@ Paste the following code inside and save:
 }
 ```
 
-7. Go inside the file '.eslintrc.json' and add the following code to 'rules' then save:
-
-```
-"rules" : {
-    "no-console": "off"
-}
-```
-
-8. Go inside the '.eslintrc.json' file and delete everything. Copy pasta and save the following code:
+7. Go inside the '.eslintrc.json' file and delete everything. Copy pasta and save the following code:
 
 ```
 {
@@ -157,7 +149,7 @@ Paste the following code inside and save:
 }
 ```
 
-9. Go inside the 'package.json' file and add the 'lint-staged' code (I just added it before 'devDependencies') and save:
+8. Go inside the 'package.json' file and add the 'lint-staged' code (I just added it before 'devDependencies') and save:
 
 ```
 // Add the code thats between the dashes
@@ -176,7 +168,7 @@ Paste the following code inside and save:
  // more code
 ```
 
-10. Run this code:
+9. Run this code:
 
 ```
 npx prettier --write .
