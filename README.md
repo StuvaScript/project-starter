@@ -108,7 +108,19 @@ module.exports = {
 
 5. Go here https://github.com/StuvaScript/normalize.css/blob/master/normalize.css and in the upper right click the double square icon that says 'copy raw contents' on hover, paste this inside the 'src/normalize.css' file, then save. 
 
-6. Go inside the file '.eslintrc.json' and add the following code to 'rules' then save:
+6. Go the VS Code settings and click 'Command Palette', then click 'Preferences: Open Workspace Settings (JSON)'.<br>
+Paste the following code inside and save:
+
+```
+{
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "eslint.validate": ["javascript"]
+}
+```
+
+7. Go inside the file '.eslintrc.json' and add the following code to 'rules' then save:
 
 ```
 "rules" : {
