@@ -62,9 +62,9 @@ npx prettier --write .
   - Airbnb
 - What format do you want your config file to be in?
   - JSON
-- Not sure
+- Would you like to install them now?
   - Yes
-- Not sure
+- Which package manager do you want to use?
   - npm
 
 <br>
@@ -305,9 +305,9 @@ Then type `./node_modules/.bin/eslint --init` which will be followed by prompts.
   - Airbnb
 - What format do you want your config file to be in?
   - JSON
-- Not sure
+- Would you like to install them now?
   - Yes
-- Not sure
+- Which package manager do you want to use?
   - npm
 
 <br>
