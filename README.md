@@ -36,6 +36,7 @@ main.js" >> .eslintignore
 echo "node_modules
 main.js" >> .prettierignore 
 touch src/index.js dist/index.html webpack.config.js src/style.css src/normalize.css
+
 ```
 
 Choose the following:
@@ -51,6 +52,24 @@ Choose the following:
 - npm
 
 <br>
+
+Inside 'dist/index.html', copy pasta and save this:
+
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="main.js" defer></script>
+    <title>Portfolio</title>
+  </head>
+  <body>
+    hello
+  </body>
+</html>
+```
 
 ## Webpack
 
