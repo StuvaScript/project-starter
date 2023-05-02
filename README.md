@@ -35,7 +35,9 @@ echo "node_modules
 main.js" >> .eslintignore 
 echo "node_modules
 main.js" >> .prettierignore 
-touch src/index.js dist/index.html webpack.config.js src/style.css src/normalize.css
+echo "import './normalize.css';
+import './style.css';" >> src/index.js
+touch dist/index.html webpack.config.js src/style.css src/normalize.css
 
 ```
 
