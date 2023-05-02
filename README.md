@@ -43,6 +43,7 @@ Choose the following:
 - None of these
 - No
 - Browser
+- Use a popular style guide
 - Airbnb
 - JSON
 - Yes
@@ -143,6 +144,7 @@ Then type `./node_modules/.bin/eslint --init` which will be followed by prompts.
 - None of these
 - No
 - Browser
+- Use a popular style guide
 - Airbnb
 - JSON
 - Yes
