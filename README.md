@@ -189,6 +189,12 @@ git subtree push --prefix dist origin gh-pages
 npx webpack --watch
 ```
 
+To get out of 'watch mode' type 'Ctrl + C'. To rewatch, type `npx webpack --watch`<br>
+Every time you do a normal 'add commit push' you will need to do the subtree push `git subtree push --prefix dist origin gh-pages` as well to stay up to date.<br>
+Remember when you're done with your project to go inside the 'webpack.config.js' file and change the mode to 'production' and change the devtool to a more production friendly source map.<br>
+<br>
+You're done!! 😄
+
 ## Webpack
 
 https://www.theodinproject.com/lessons/node-path-javascript-webpack<br>
