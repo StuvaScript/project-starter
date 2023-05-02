@@ -50,6 +50,7 @@ Choose the following:
 - npm
 
 <br>
+
 ### Webpack
 
 Initialize node package manager by typing `npm init -y`. This will create a package.json file in your project.<br>
