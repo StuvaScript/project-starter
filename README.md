@@ -35,10 +35,10 @@ npm pkg set scripts.prepare="husky install"
 npx husky add .husky/pre-commit "npx lint-staged"
 mkdir src dist src/fonts src/images
 echo "node_modules" >> .gitignore
-echo "node_modules" >> .eslintignore 
-echo "main.js" >> .eslintignore 
-echo "node_modules" >> .prettierignore 
-echo "main.js" >> .prettierignore 
+echo "node_modules
+main.js" >> .eslintignore 
+echo "node_modules
+main.js" >> .prettierignore 
 touch src/index.js dist/index.html webpack.config.js src/style.css src/normalize.css
 ```
 
