@@ -105,7 +105,7 @@ module.exports = {
 };
 ````
 
-Go here https://github.com/StuvaScript/normalize.css/blob/master/normalize.css and click the 'copy raw contents' button in the upper right, paste them inside the 'normalize.css' file, then save. 
+Go here https://github.com/StuvaScript/normalize.css/blob/master/normalize.css and in the upper right click the double square icon that says 'copy raw contents' on hover, paste this inside the 'normalize.css' file, then save. 
 
 ## Webpack
 
