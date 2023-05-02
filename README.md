@@ -18,7 +18,7 @@ Type `git clone` and paste the key. <br>
 Change to the new repo's directory.<br>
 Type `code .` to open the project in VS Code.<br>
 Hit 'ctrl + backtick ( \` )' to open the terminal in VS Code.<br>
-f
+<br>
 TL;DR
 ```
 npm init -y
