@@ -139,7 +139,7 @@ Paste the following code inside and save:
 }
 ```
 
-8. Go inside the '.eslintrc.json' file and add 'prettier' to the 'extends' array. Make sure it goes last so it overrides the other configs. Don't forget to add square brackets, a comma, and save. Code will look like this:
+8. Go inside the '.eslintrc.json' file and delete everything. Copy pasta and save the following code:
 
 ```
 {
@@ -148,29 +148,15 @@ Paste the following code inside and save:
     "commonjs": true,
     "es2021": true
   },
-  "extends": ["airbnb-base", "prettier"], <-- Add 'prettier' here
+  "extends": ["airbnb-base", "prettier"],
   "overrides": [],
-  
-  // other code
-```
-
-9. Go inside the 'package.json' file and add the 'lint-staged' code (I just added it before 'devDependencies') and save:
-
-```
-// Add the code thats between the dashes
-// ----------------------------------
-
-"lint-staged": {
-    "**/*": "prettier --write --ignore-unknown"
+  "parserOptions": {
+    "ecmaVersion": "latest"
   },
-  
-// ----------------------------------
-
-"devDependencies": {
-  "css-loader": "^6.7.3",
-  "eslint": "^8.39.0",
-    
- // more code
+  "rules": {
+    "no-console": "off"
+  }
+}
 ```
 
 ## Webpack
