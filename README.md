@@ -20,7 +20,6 @@ Hit 'ctrl + backtick ( \` )' to open the terminal in VS Code.<br>
 npm init -y
 npm install webpack webpack-cli --save-dev
 npm install --save-dev style-loader css-loader
-npx webpack
 npm install eslint --save-dev
 ./node_modules/.bin/eslint --init
 npm install --save-dev --save-exact prettier
@@ -41,8 +40,7 @@ echo "{
   \"singleQuote\": true
 }" >> .prettierrc.json
 touch dist/index.html webpack.config.js src/style.css src/normalize.css
-npx prettier --write .
-
+npx webpack
 ```
 
 2. Choose the following:
@@ -181,6 +179,7 @@ Paste the following code inside and save:
 10. Run this code:
 
 ```
+npx prettier --write .
 git add .
 git commit -m "Initial setup"
 git push origin main
