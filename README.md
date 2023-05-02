@@ -41,6 +41,7 @@ echo "{
   \"singleQuote\": true
 }" >> .prettierrc.json
 touch dist/index.html webpack.config.js src/style.css src/normalize.css
+npx prettier --write .
 
 ```
 
@@ -108,7 +109,7 @@ module.exports = {
 
 5. Go here https://github.com/StuvaScript/normalize.css/blob/master/normalize.css and in the upper right click the double square icon that says 'copy raw contents' on hover, paste this inside the 'src/normalize.css' file, then save. 
 
-6. Go the VS Code settings and click 'Command Palette', then click 'Preferences: Open Workspace Settings (JSON)'.<br>
+6. Go to the VS Code settings and click 'Command Palette', then click 'Preferences: Open Workspace Settings (JSON)'.<br>
 Paste the following code inside and save:
 
 ```
