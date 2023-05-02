@@ -154,6 +154,25 @@ Paste the following code inside and save:
   // other code
 ```
 
+9. Go inside the 'package.json' file and add the 'lint-staged' code (I just added it before 'devDependencies') and save:
+
+```
+// Add the code thats between the dashes
+// ----------------------------------
+
+"lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  },
+  
+// ----------------------------------
+
+"devDependencies": {
+  "css-loader": "^6.7.3",
+  "eslint": "^8.39.0",
+    
+ // more code
+```
+
 ## Webpack
 
 https://www.theodinproject.com/lessons/node-path-javascript-webpack<br>
