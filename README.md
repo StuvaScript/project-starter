@@ -65,10 +65,39 @@ Inside 'dist/index.html', copy pasta and save this:
     <script src="main.js" defer></script>
     <title>Gimme a title</title>
   </head>
-  <body>
-  </body>
+  <body></body>
 </html>
 ```
+
+Inside 'webpack.config.js', copy pasta and save this:
+
+```
+const path = require("path");
+
+module.exports = {
+  entry: "./src/index.js",
+  output: {
+    filename: "main.js",
+    path: path.resolve(__dirname, "dist"),
+  },
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: "asset/resource",
+      },
+    ],
+  },
+};
+````
 
 ## Webpack
 
@@ -127,7 +156,7 @@ module.exports = {
       },
     ],
   },
-};change
+};
  ```
  
 In the terminal type `touch src/style.css src/normalize.css`.<br>
