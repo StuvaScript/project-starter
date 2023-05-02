@@ -63,10 +63,9 @@ Inside 'dist/index.html', copy pasta and save this:
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="main.js" defer></script>
-    <title>Portfolio</title>
+    <title>Gimme a title</title>
   </head>
   <body>
-    hello
   </body>
 </html>
 ```
