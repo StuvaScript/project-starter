@@ -168,14 +168,13 @@ Delete everything and paste the following code inside and save:
  // more code
 ```
 
-9. Run this code:
+9. Run this code: git add dist && git commit -m "Initial dist subtree commit"
 
 ```
 npx prettier --write .
 git add .
 git commit -m "Initial setup"
 git push origin main
-git add dist && git commit -m "Initial dist subtree commit"
 git subtree push --prefix dist origin gh-pages
 npx webpack --watch
 ```
