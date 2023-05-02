@@ -20,6 +20,7 @@ Copy pasta this in the terminal:
 npm init -y
 npm install webpack webpack-cli --save-dev
 npm install --save-dev style-loader css-loader
+npx webpack
 npm install eslint --save-dev
 ./node_modules/.bin/eslint --init
 npm install --save-dev --save-exact prettier
@@ -105,7 +106,15 @@ module.exports = {
 };
 ````
 
-Go here https://github.com/StuvaScript/normalize.css/blob/master/normalize.css and in the upper right click the double square icon that says 'copy raw contents' on hover, paste this inside the 'normalize.css' file, then save. 
+Go here https://github.com/StuvaScript/normalize.css/blob/master/normalize.css and in the upper right click the double square icon that says 'copy raw contents' on hover, paste this inside the 'src/normalize.css' file, then save. 
+
+Go inside the file '.eslintrc.json' and add the following code to 'rules' then save:
+
+```
+"rules" : {
+    "no-console": "off"
+}
+```
 
 ## Webpack
 
