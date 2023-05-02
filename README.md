@@ -23,7 +23,6 @@ npm install --save-dev style-loader css-loader
 npm install eslint --save-dev
 ./node_modules/.bin/eslint --init
 npm install --save-dev --save-exact prettier
-echo {}> .prettierrc.json
 npm install --save-dev eslint-config-prettier
 npm install --save-dev husky lint-staged
 npx husky install
@@ -37,6 +36,9 @@ echo "node_modules
 main.js" >> .prettierignore 
 echo "import './normalize.css';
 import './style.css';" >> src/index.js
+echo "{
+  \"singleQuote\": true
+}" >> .prettierrc.json
 touch dist/index.html webpack.config.js src/style.css src/normalize.css
 
 ```
@@ -102,6 +104,8 @@ module.exports = {
   },
 };
 ````
+
+Go here https://github.com/StuvaScript/normalize.css/blob/master/normalize.css and click the 'copy raw contents' button in the upper right, paste them inside the 'normalize.css' file, then save. 
 
 ## Webpack
 
