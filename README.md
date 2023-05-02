@@ -1,6 +1,6 @@
 # Project Starter
 
-This is a file on how to start your projects using Webpack, linting, prettier, and hooks.<br>
+This is a file on how to start your projects using Webpack, ES Lint, Prettier, Husky, and Lint-Staging.<br>
 
 ## Github
 
