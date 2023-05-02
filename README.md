@@ -46,17 +46,26 @@ npx prettier --write .
 ```
 
 2. Choose the following:
-- Hello
+- How would you like to use ESLint?
   - To check syntax, find problems, and enforce code style
-- CommonJS
-- None of these
-- No
-- Browser
-- Use a popular style guide
-- Airbnb
-- JSON
-- Yes
-- npm
+- What type of modules does your project use?
+  - CommonJS
+- Which framework does your project use?
+  - None of these
+- Does your project use TypeScript?
+  - No
+- Where does your code run?
+  - Browser
+- How would you like to define a style for your project?
+  - Use a popular style guide
+- Which style guide do you want to follow?
+  - Airbnb
+- What format do you want your config file to be in?
+  - JSON
+- Not sure
+  - Yes
+- Not sure
+  - npm
 
 <br>
 
