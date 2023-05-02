@@ -178,6 +178,17 @@ Paste the following code inside and save:
  // more code
 ```
 
+10. Run this code:
+
+```
+git add .
+git commit -m "Initial setup"
+git push origin main
+git add dist && git commit -m "Initial dist subtree commit"
+git subtree push --prefix dist origin gh-pages
+npx webpack --watch
+```
+
 ## Webpack
 
 https://www.theodinproject.com/lessons/node-path-javascript-webpack<br>
@@ -396,7 +407,7 @@ Go inside the 'package.json' file and add the 'lint-staged' code (I just added i
 ### Setting it all into motion
 
 Type `npx webpack --watch` in the terminal for automatic changes on save. To get out of 'watch mode' type 'Ctrl + C'<br>
-Go ahead and `git add .` then `git commit .` then `git push origin main`<br>
+Go ahead and `git add .` then `git commit` then `git push origin main`<br>
 
 ### Displaying from a subtree
 
