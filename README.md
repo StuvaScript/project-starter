@@ -14,7 +14,7 @@ Hit 'ctrl + backtick ( \` )' to open the terminal in VS Code.<br>
 <br>
 
 ### TL;DR
-Copy pasta this in the terminal:
+1. Copy pasta this in the terminal:
 
 ```
 npm init -y
@@ -44,7 +44,7 @@ touch dist/index.html webpack.config.js src/style.css src/normalize.css
 
 ```
 
-Choose the following:
+2. Choose the following:
 - To check syntax, find problems, and enforce code style
 - CommonJS
 - None of these
@@ -58,7 +58,7 @@ Choose the following:
 
 <br>
 
-Inside 'dist/index.html', copy pasta and save this:
+3. Inside 'dist/index.html', copy pasta and save this:
 
 ```
 <!DOCTYPE html>
@@ -74,7 +74,7 @@ Inside 'dist/index.html', copy pasta and save this:
 </html>
 ```
 
-Inside 'webpack.config.js', copy pasta and save this:
+4. Inside 'webpack.config.js', copy pasta and save this:
 
 ```
 const path = require('path');
@@ -106,9 +106,9 @@ module.exports = {
 };
 ````
 
-Go here https://github.com/StuvaScript/normalize.css/blob/master/normalize.css and in the upper right click the double square icon that says 'copy raw contents' on hover, paste this inside the 'src/normalize.css' file, then save. 
+5. Go here https://github.com/StuvaScript/normalize.css/blob/master/normalize.css and in the upper right click the double square icon that says 'copy raw contents' on hover, paste this inside the 'src/normalize.css' file, then save. 
 
-Go inside the file '.eslintrc.json' and add the following code to 'rules' then save:
+6. Go inside the file '.eslintrc.json' and add the following code to 'rules' then save:
 
 ```
 "rules" : {
