@@ -248,16 +248,26 @@ https://www.digitalocean.com/community/tutorials/linting-and-formatting-with-esl
 
 In the terminal type `npm install eslint --save-dev`.<br>
 Then type `./node_modules/.bin/eslint --init` which will be followed by prompts. Choose the following:
-- To check syntax, find problems, and enforce code style
-- CommonJS
-- None of these
-- No
-- Browser
-- Use a popular style guide
-- Airbnb
-- JSON
-- Yes
-- npm
+- How would you like to use ESLint?
+  - To check syntax, find problems, and enforce code style
+- What type of modules does your project use?
+  - CommonJS
+- Which framework does your project use?
+  - None of these
+- Does your project use TypeScript?
+  - No
+- Where does your code run?
+  - Browser
+- How would you like to define a style for your project?
+  - Use a popular style guide
+- Which style guide do you want to follow?
+  - Airbnb
+- What format do you want your config file to be in?
+  - JSON
+- Not sure
+  - Yes
+- Not sure
+  - npm
 
 <br>
 If you haven't already, go into 'Extensions' in VS Code and download the 'ES Lint' extension.<br>
