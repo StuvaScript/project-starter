@@ -2,8 +2,6 @@
 
 This is a file on how to start your projects using Webpack, linting, prettier, and hooks.<br>
 
-TL;DR
-
 ## Webpack
 
 https://www.theodinproject.com/lessons/node-path-javascript-webpack<br>
@@ -21,6 +19,36 @@ Change to the new repo's directory.<br>
 Type `code .` to open the project in VS Code.<br>
 Hit 'ctrl + backtick ( \` )' to open the terminal in VS Code.<br>
 
+TL;DR
+```
+npm init -y
+npm install webpack webpack-cli --save-dev
+npm install --save-dev style-loader css-loader
+npm install eslint --save-dev
+./node_modules/.bin/eslint --init
+npm install --save-dev --save-exact prettier
+echo {}> .prettierrc.json
+npm install --save-dev eslint-config-prettier
+npm install --save-dev husky lint-staged
+npx husky install
+npm pkg set scripts.prepare="husky install"
+npx husky add .husky/pre-commit "npx lint-staged"
+mkdir src dist src/fonts src/images
+touch .eslintignore .prettierignore .gitignore src/index.js dist/index.html webpack.config.js src/style.css src/normalize.css
+```
+
+Choose the following:
+- To check syntax, find problems, and enforce code style
+- CommonJS
+- None of these
+- No
+- Browser
+- Airbnb
+- JSON
+- Yes
+- npm
+
+<br>
 ### Webpack
 
 Initialize node package manager by typing `npm init -y`. This will create a package.json file in your project.<br>
