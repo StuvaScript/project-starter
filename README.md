@@ -129,6 +129,21 @@ Paste the following code inside and save:
 }
 ```
 
+8. Go inside the '.eslintrc.json' file and add 'prettier' to the 'extends' array. Make sure it goes last so it overrides the other configs. Don't forget to add square brackets, a comma, and save. Code will look like this:
+
+```
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es2021": true
+  },
+  "extends": ["airbnb-base", "prettier"], <-- Add 'prettier' here
+  "overrides": [],
+  
+  // other code
+```
+
 ## Webpack
 
 https://www.theodinproject.com/lessons/node-path-javascript-webpack<br>
