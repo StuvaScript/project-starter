@@ -46,7 +46,8 @@ npx prettier --write .
 ```
 
 2. Choose the following:
-- To check syntax, find problems, and enforce code style
+- Hello
+  - To check syntax, find problems, and enforce code style
 - CommonJS
 - None of these
 - No
