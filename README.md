@@ -176,6 +176,8 @@ git add .
 git commit -m "Initial setup"
 git push origin main
 git subtree push --prefix dist origin gh-pages
+git checkout -b branch-1
+git push origin branch-1
 npx webpack --watch
 ```
 
