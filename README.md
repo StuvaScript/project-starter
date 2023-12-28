@@ -28,7 +28,7 @@ npm install --save-dev husky lint-staged
 npx husky install
 npm pkg set scripts.prepare="husky install"
 npx husky add .husky/pre-commit "npx lint-staged"
-mkdir src dist src/fonts src/images
+mkdir src dist src/fonts src/images src/modules
 echo "node_modules" >> .gitignore
 echo "node_modules
 main.js" >> .eslintignore 
@@ -39,7 +39,7 @@ import './style.css';" >> src/index.js
 echo "{
   \"singleQuote\": true
 }" >> .prettierrc.json
-touch dist/index.html webpack.config.js src/style.css src/normalize.css
+touch dist/index.html webpack.config.js src/style.css src/normalize.css src/modules/dom-manipulation.js src/modules/event-handlers.js src/modules/functions.js
 npx webpack
 ```
 
